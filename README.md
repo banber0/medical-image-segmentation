@@ -57,7 +57,7 @@
 
 六张图均提供 **PNG 预览、SVG 导出和可编辑的 Visio `.vsdx` 原文件**，可在[架构图目录](docs/architecture/README.md)集中查看。
 
-| 图纸 | 在线预览 | Visio 原文件 |
+| 图纸 | 在线预览 |
 | --- | --- | --- |
 | 逻辑架构图 | [PNG](docs/architecture/逻辑架构图.png) |
 | 系统物理架构图 | [PNG](docs/architecture/系统物理架构图.png) ||
