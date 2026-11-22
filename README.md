@@ -12,7 +12,7 @@
 ![Flask](https://img.shields.io/badge/Flask-3.0-000000?logo=flask&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-8-4479A1?logo=mysql&logoColor=white)
 
-[功能概览](#功能概览) · [系统架构](#系统架构) · [快速开始](#快速开始) · [数据集格式](#数据集格式) · [模型与训练](#模型与训练) · [架构图原文件](docs/architecture/README.md)
+[功能概览](#功能概览) · [系统架构](#系统架构) · [快速开始](#快速开始) · [数据集格式](#数据集格式) · [模型与训练](#模型与训练) · [架构图集](docs/architecture/README.md)
 
 </div>
 
@@ -53,20 +53,20 @@
 
 图中展示 U-Net 编码、解码及跳跃连接的总体思路；实际训练与推理使用 `segmentation_models_pytorch.Unet`，编码器为 ResNet34。`models/unet_model.py` 中另保留了独立 U-Net 定义。
 
-### 设计文档
+### 架构与流程图
 
-六张图均提供 **PNG 预览、SVG 导出和可编辑的 Visio `.vsdx` 原文件**，可在[架构图目录](docs/architecture/README.md)集中查看。
+六张设计图均以 **PNG 图片**展示。点击下方链接查看大图，或打开[完整架构图集](docs/architecture/README.md)连续浏览。
 
-| 图纸 | 在线预览 |
+| 设计图 | 内容说明 | 图片预览 |
 | --- | --- | --- |
-| 逻辑架构图 | [PNG](docs/architecture/逻辑架构图.png) |
-| 系统物理架构图 | [PNG](docs/architecture/系统物理架构图.png) |
-| 数据物理存储结构示意图 | [PNG](docs/architecture/数据物理存储结构示意图.png) |
-| 算法图 | [PNG](docs/architecture/算法图.png) |
-| 推理流程图 | [PNG](docs/architecture/推理流程图.png) ||
-| 影像分割业务流程图 | [PNG](docs/architecture/影像分割业务流程图.png) |
+| 逻辑架构图 | 展示层、业务逻辑层与数据存储层的关系 | [查看 PNG](docs/architecture/逻辑架构图.png) |
+| 系统物理架构图 | 浏览器、Web 服务、计算服务与数据库的部署关系 | [查看 PNG](docs/architecture/系统物理架构图.png) |
+| 数据物理存储结构示意图 | 数据库记录与磁盘文件的存储关系 | [查看 PNG](docs/architecture/数据物理存储结构示意图.png) |
+| 算法图 | 编码器、解码器与跳跃连接 | [查看 PNG](docs/architecture/算法图.png) |
+| 推理流程图 | 图像预处理、模型推理与结果输出 | [查看 PNG](docs/architecture/推理流程图.png) |
+| 影像分割业务流程图 | 请求接收、图像分割、结果保存与响应 | [查看 PNG](docs/architecture/影像分割业务流程图.png) |
 
-架构图描述设计层面的模块关系。当前代码通过 Pillow 读取常见二维图像；图纸中涉及的 DICOM 等格式需先转换为 PNG 等图像后使用。
+当前代码通过 Pillow 读取常见二维图像；DICOM 等医学影像格式需先转换为 PNG 等图像后使用。
 
 ## 目录结构
 
@@ -88,7 +88,7 @@ medical-image-segmentation/
 │   ├── .env.example              # API 地址配置示例
 │   ├── package.json
 │   └── package-lock.json
-└── docs/architecture/            # 六张设计图：VSDX、PNG、SVG
+└── docs/architecture/            # 六张架构与流程图（PNG）及图集说明
 ```
 
 运行时会创建 `datasets/`、`uploads/` 和 `models/weights/`。数据集、上传文件、用户数据库、依赖安装目录和训练权重未提交到仓库，原始本地文件仍保留。

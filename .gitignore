@@ -46,3 +46,7 @@ dist/
 .DS_Store
 Thumbs.db
 /.publish/
+
+# Keep editable architecture sources local; publish PNG previews only
+/docs/architecture/*.vsdx
+/docs/architecture/*.svg
