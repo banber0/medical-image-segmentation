@@ -62,7 +62,7 @@
 | 逻辑架构图 | [PNG](docs/architecture/逻辑架构图.png) |
 | 系统物理架构图 | [PNG](docs/architecture/系统物理架构图.png) ||
 | 数据物理存储结构示意图 | [PNG](docs/architecture/数据物理存储结构示意图.png) ||
-| 算法图 | [PNG](docs/architecture/算法图.png) | [VSDX](docs/architecture/算法图.vsdx) |
+| 算法图 | [PNG](docs/architecture/算法图.png) ||
 | 推理流程图 | [PNG](docs/architecture/推理流程图.png) ||
 | 影像分割业务流程图 | [PNG](docs/architecture/影像分割业务流程图.png) | |
 
