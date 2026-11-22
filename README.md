@@ -60,11 +60,11 @@
 | 图纸 | 在线预览 |
 | --- | --- | --- |
 | 逻辑架构图 | [PNG](docs/architecture/逻辑架构图.png) |
-| 系统物理架构图 | [PNG](docs/architecture/系统物理架构图.png) ||
-| 数据物理存储结构示意图 | [PNG](docs/architecture/数据物理存储结构示意图.png) ||
-| 算法图 | [PNG](docs/architecture/算法图.png) ||
+| 系统物理架构图 | [PNG](docs/architecture/系统物理架构图.png) |
+| 数据物理存储结构示意图 | [PNG](docs/architecture/数据物理存储结构示意图.png) |
+| 算法图 | [PNG](docs/architecture/算法图.png) |
 | 推理流程图 | [PNG](docs/architecture/推理流程图.png) ||
-| 影像分割业务流程图 | [PNG](docs/architecture/影像分割业务流程图.png) | |
+| 影像分割业务流程图 | [PNG](docs/architecture/影像分割业务流程图.png) |
 
 架构图描述设计层面的模块关系。当前代码通过 Pillow 读取常见二维图像；图纸中涉及的 DICOM 等格式需先转换为 PNG 等图像后使用。
 
